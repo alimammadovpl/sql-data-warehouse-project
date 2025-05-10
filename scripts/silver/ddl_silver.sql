@@ -1,4 +1,8 @@
- IF OBJECT_ID ('silver.crm_cust_info' , 'U') IS NOT NULL
+
+-- Script to create 'silver' layer tables for CRM and ERP systems with customer, product, and sales data.
+
+
+IF OBJECT_ID ('silver.crm_cust_info' , 'U') IS NOT NULL
  DROP TABLE silver.crm_cust_info;
  CREATE TABLE silver.crm_cust_info (
 cst_id INT,
